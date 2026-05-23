@@ -31,3 +31,6 @@ require (
 	golang.org/x/tools v0.16.1 // indirect
 	yaml.v2 v2.4.0 // indirect
 )
+
+// Personal fork for learning/experimentation.
+// Upstream: https://github.com/safing/portmaster
