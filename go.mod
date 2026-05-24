@@ -34,3 +34,8 @@ require (
 
 // Personal fork for learning/experimentation.
 // Upstream: https://github.com/safing/portmaster
+//
+// Notes:
+//   - Studying the DNS interception and firewall logic in base/
+//   - TODO: look into whether miekg/dns can be bumped to v1.1.58+
+//     once portbase is updated to match
