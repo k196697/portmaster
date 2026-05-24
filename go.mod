@@ -41,3 +41,6 @@ require (
 //     improvements to EDNS0 handling). Verified portbase still compiles
 //     against this version as it only uses stable public API surface.
 //   - TODO: watch portbase for an official bump so this can be dropped
+//   - golang.org/x/net and golang.org/x/sys are pinned at their current
+//     versions; worth revisiting once portbase releases a new minor that
+//     pulls in updated x/ deps (tracking upstream issue #1042).
