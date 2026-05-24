@@ -14,7 +14,7 @@ require (
 	github.com/google/gopacket v1.1.19
 	github.com/miekg/dns v1.1.58
 	golang.org/x/net v0.19.0
-	golang.org/x/sys v0.15.0
+	golang.org/x/sys v0.16.0
 )
 
 require (
@@ -44,3 +44,6 @@ require (
 //   - golang.org/x/net and golang.org/x/sys are pinned at their current
 //     versions; worth revisiting once portbase releases a new minor that
 //     pulls in updated x/ deps (tracking upstream issue #1042).
+//   - Bumped golang.org/x/sys from v0.15.0 to v0.16.0; contains a fix for
+//     a kernel interface enumeration edge case on Linux that I hit locally
+//     when testing with multiple network namespaces. No API changes.
