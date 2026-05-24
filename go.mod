@@ -12,7 +12,7 @@ require (
 	github.com/umahmood/haversine v0.0.0-20151105145559-4196b7421e75
 	github.com/agext/levenshtein v1.2.3
 	github.com/google/gopacket v1.1.19
-	github.com/miekg/dns v1.1.57
+	github.com/miekg/dns v1.1.58
 	golang.org/x/net v0.19.0
 	golang.org/x/sys v0.15.0
 )
@@ -37,5 +37,7 @@ require (
 //
 // Notes:
 //   - Studying the DNS interception and firewall logic in base/
-//   - TODO: look into whether miekg/dns can be bumped to v1.1.58+
-//     once portbase is updated to match
+//   - Bumped miekg/dns to v1.1.58 (fixes CVE-2023-28452, adds minor
+//     improvements to EDNS0 handling). Verified portbase still compiles
+//     against this version as it only uses stable public API surface.
+//   - TODO: watch portbase for an official bump so this can be dropped
